@@ -1,0 +1,161 @@
+* {margin: 0px; padding: 0px;}
+body {font-size: 12px; font-family: sans-serif;}
+li {list-style: none;}
+img {border:0;}
+a {text-decoration: none; color: inherit;}
+
+/*@font-face {
+    font-family: 'neon';
+    src: url('../srcs/fonts/NeonPlanetDisplay.ttf') format('truetype');
+} */
+
+#header{width: 1200px; height: 250px; margin: 0px auto; overflow: hidden;}
+
+#header .logo { width: 1200px; height: 50px; float: left; margin-right: 0px; margin-left: 0px; margin-top: 0px; font-family:  "Bebas Kai";
+    font-size: 26px; color: #ffb11a; font-weight: 10px; text-align:center; line-height: 50px;}
+
+/*{ width: 1200px; height: 10px; float: left; margin-top: 60px;}*/
+.menu {width: 1200px;}
+/*.menu ul {overflow: hidden;}*/
+.menu ul li {float: left; position: relative; transition: all .4s; }
+.menu ul li a {width: 240px; height: 1px; display: block; font-size: 17px; font-weight: 300; color: #ffb400; text-align: center; line-height: 50px;}
+.menu ul li a:hover {color: #ffb400; text-decoration: underline; font-size: 20px;}
+.menu:hover li { transform: scale(.7); filter:blur(5px);}
+.menu li:hover { transform: scale(1.2); filter:blur(0px);
+}
+
+#visual {width: 1300px; height: 710px; left:50%; transform: translateX(-50%); color: aqua;}
+#visual_text{top:650px; left:975px; width: 400px; bottom: 130px; font-size: 15px; font-weight: right; color:#f38f00; line-height: 25px;}
+
+#line {width : 1200px; border-bottom: 1px solid #bebebe;}
+
+/*서브1 페이지*/
+
+.section {margin-top: 0px;}
+.section input[id*="slide"] {
+    display: none;
+}
+.section .slidewrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.section .slidelist {
+    white-space: nowrap;
+    font-size: 0;
+}
+.section .slidelist > li {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    transition: all .5s;
+}
+
+.section .slidelist > li > a {
+    display: block;
+    position: relative;
+}
+.section .slidelist > li > a img {
+    width: 100%;
+}
+
+.section .slidelist label {
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 50px;
+    cursor: pointer;
+}
+
+.section .slidelist .left {
+    left: 30px;
+    background:url("../img/left.png") center center / 100% no-repeat;
+}
+
+.section .slidelist .right {
+    right: 30px;
+    background:url("../img/right.png") center center / 100% no-repeat;
+}
+
+.section [id="slide01"]:checked ~ .slidewrap .slidelist > li {transform: translateX(0%);}
+
+
+.section [id="slide02"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-100%);}
+
+
+.section [id="slide03"]:checked ~ .slidewrap .slidelist > li {transform: translateX(-200%);}
+
+
+
+#sub1_visual1 {width:1300px; height:500px; margin: 0 auto; background:#000; text-align: center;}
+#sub1_visual2 {width:1300px; height:500px; margin: 0 auto; background:#000; text-align: center;}
+#sub1_visual3 {width:1300px; height:500px; margin: 0 auto; background:#f0fbfd; text-align: center;}
+#sub1_visual4 {width:1300px; height:500px; margin: 0 auto; background:#000; text-align: center;}
+#sub1_visual5 {width:1300px; height:500px; margin: 0 auto; background:#000; text-align: center;}
+
+#footer_wrap #footer { width:1500; height: 45px; background: #ccc;text-align: center;  line-height: 20px; }
+#footer p { margin-top: 0; top:20px;}
+#footer_wrap #footer1 p1 { margin-top: 0; top:20px; font-size: 20px;}
+
+/*서브 4페이지*/
+
+#sub4_visual_wrap {width: 100%; height: 500px; background:#fffceb;
+ background-image: url(../img/sub_vi5.jpg);
+        background-position: center top;
+        background-repeat: no-repeat;
+}
+
+#sub4_visual_wrap #sub4_visual {width:1200px; margin: 0 auto; height: 350px;}
+
+
+#sub_contents4_wrap {width: 100%; height: 1650px;}
+#sub_contents4_wrap #contents4 {width: 1200px; margin: 0 auto; height: 800px;}
+.row1 {width:1200px; height: 350px; margin-bottom: 20px;margin: 0 auto;}
+
+.title4 {height: 30px; font-size: 18px; line-height: 30px; color: orangered;}
+.row1 .thumb4 {width:1200px; overflow: hidden;}
+.row1 .thumb4 li { width: 240px; height: 300px; float:left; margin-right: 70px; margin-top: 10px; }
+.row1 .thumb4 li:last-child {margin-right: 0;}
+.thumb4 li img {box-shadow: 0 0 5px #c9c9c9; margin-left: 1px;}
+
+.thumb4 li .mtm {margin-top: 5px; font-size: 12px; text-align: center; border-bottom: 1px solid #ccc;  padding-bottom: 5px;}
+.thumb4 .won1 {margin-top: 0px; text-align: center;}
+
+
+.contents4 .paging4 {
+    margin-top: 20px;
+    font-size: 0px;
+    text-align: center;
+}
+
+.contents4 .paging4 a{
+    display: inline-block;
+    margin-left: 10px;
+    
+    border-radius: 30px;
+    font-size: 12px;
+    padding: 5px 10px;
+    
+}
+.contents4 .paging4 a:first-child {
+    margin-left: 0;
+}
+
+.contents4 .paging4 a.bt { 
+    border: 1px solid #eee;
+    background: #eee;
+   
+}
+.contents4 .paging4 a.num { 
+   border: 1px solid #ccc;
+    font-weight: 600;
+    color: #ff9000;
+}
+.contents4 .paging4 a.num.on {
+    background: #ff9000;
+    color: aliceblue;
+}
+
+
